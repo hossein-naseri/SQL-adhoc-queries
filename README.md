@@ -1,2 +1,2 @@
 # sql-adhoc-queries
-Theses are projects and exercises for simulating adhoc analysis requests that I've done at Masterschool. All queries are done in Postgresql
+Theses are sql projects and adhoc query exercises that I've done during my attendance at Masterschool. All queries are done in Postgresql
