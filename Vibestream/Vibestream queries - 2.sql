@@ -27,23 +27,23 @@ JamesTiger8285 made at least 3 more posts than RobertMermaid7605 or vice versa).
 WITH users_post_count AS (
   
   SELECT
-  		post_date,
-  		COUNT(post_id) FILTER(WHERE user_name = 'JamesTiger8285') AS JamesTiger8285_posts,
-  		COUNT(post_id) FILTER(WHERE user_name = 'RobertMermaid7605') AS RobertMermaid7605_posts
+	post_date,
+	COUNT(post_id) FILTER(WHERE user_name = 'JamesTiger8285') AS JamesTiger8285_posts,
+	COUNT(post_id) FILTER(WHERE user_name = 'RobertMermaid7605') AS RobertMermaid7605_posts
   
   FROM posts
-  		JOIN users
-  		USING(user_id)
+	JOIN users
+	USING(user_id)
   
   WHERE user_name = 'RobertMermaid7605'
-  		OR user_name = 'JamesTiger8285'
+	OR user_name = 'JamesTiger8285'
   
   GROUP BY post_date
 )
 
 
 SELECT
-		post_date
+	post_date
 
 FROM users_post_count
 
@@ -143,9 +143,9 @@ WITH ranking_table AS (
 
 
 SELECT
-		post_date,
-    user_id,
-    posts
+	post_date,
+	user_id,
+	posts
     
 FROM ranking_table
 
